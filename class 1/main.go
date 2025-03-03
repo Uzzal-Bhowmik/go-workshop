@@ -49,12 +49,13 @@ func main() {
 	height, _ = strconv.ParseFloat(strings.TrimSpace(heightStr), 64)
 
 	bmi = weight / (height * height)
-    healthStatus = getHealthStatus(bmi)
+  healthStatus = getHealthStatus(bmi)
 
+	fmt.Println()
 	fmt.Printf("Welcome, %s! Let's calculate your BMI.\n", name)
 	fmt.Println(bmiFormulaMsg)
 
 	fmt.Println()
 	fmt.Printf("Your BMI is: %.2f\n", bmi)
-    fmt.Printf("Health Status: %s\n", healthStatus)
+  fmt.Printf("Health Status: %s\n", healthStatus)
 }
